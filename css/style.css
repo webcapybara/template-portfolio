@@ -336,3 +336,134 @@ body {
   height: 14px;
   width: 16px;
 }
+.news {
+  margin-top: 16rem;
+  margin-bottom: 8rem;
+}
+.news__header {
+  margin: 0 auto;
+  text-align: center;
+}
+.news__title {
+  font-size: 3rem;
+  color: #2B2A2C;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+.news__text {
+  font-size: 1.2rem;
+  color: #6A696B;
+  font-weight: 300;
+  margin-bottom: 3.6rem;
+}
+.news__footer {
+  text-align: right;
+}
+.news__link {
+  font-size: 0.93rem;
+  color: #6A696B;
+}
+.news__link:hover {
+  text-decoration: none;
+}
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+.articles__col {
+  width: 33.3333%;
+  padding: 0 1rem;
+  margin-bottom: 1.1rem;
+}
+.articles__header {
+  position: relative;
+  margin-bottom: 1.35rem;
+}
+.articles__date {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 77px;
+  text-align: center;
+  width: 77px;
+  background-color: #2B2A2C;
+  color: #ffffff;
+  font-size: 1.03rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.articles__title {
+  font-size: 1.2rem;
+  color: #2B2A2C;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+.articles__title a {
+  text-decoration: none;
+  color: inherit;
+}
+.articles__title a:hover {
+  text-decoration: underline;
+}
+.articles__cat {
+  font-size: 0.8rem;
+  color: #2B2A2C;
+  margin-bottom: 1.4rem;
+}
+.articles__text {
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+  color: #6A696B;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+.footer {
+  background-color: #2B2A2C;
+  padding: 1.35rem 0;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__nav {
+  display: flex;
+  align-items: center;
+}
+.footer__link {
+  font-size: 0.93rem;
+  text-decoration: none;
+  color: #6A696B;
+  margin-right: 1.2rem;
+  transition: color 0.2s linear;
+}
+.footer__link:hover {
+  color: #ffffff;
+}
+.footer__link + .btn {
+  min-width: 7rem;
+  padding: 0.5rem 0;
+  margin-right: 0;
+  transition: color 0.2s linear, background-color 0.2s linear;
+}
+.footer__link + .btn:hover {
+  background-color: #ffffff;
+  color: #6A696B;
+}
+.footer__credits {
+  display: flex;
+  color: #6A696B;
+  align-items: center;
+  font-size: 0.93rem;
+}
+.footer__copy {
+  padding-right: 1rem;
+  margin-right: 1rem;
+  border-right: 1px solid #6A696B;
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+}
