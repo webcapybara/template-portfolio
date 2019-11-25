@@ -4,19 +4,43 @@
     font-size: 0.93rem;
     color: @black;
     text-transform: uppercase;
+    position: relative;
     font-weight: bold;
     text-decoration: none;
-    border: 2px solid transparent;
-    border-radius: 20px;
-    padding: .66rem 2rem;
+    margin-left: 2rem;
 
-    &:hover,
-    &.active {
-        border-color: @black;
+    &::after {
+        width: 0px;
+        content: "";
+        background-color: @black;
+        position: absolute;
+        bottom: -5px;
+        height: 2px;
+        left: 0;
+        z-index: 1;
+        transition: .2s linear;
+    }
+
+    &:hover:not(.nav__link--btn) {
+        &::after {
+            width: 100%;
+        }
+    }
+
+    &--btn {
+        border: 2px solid @black;
+        padding: .66rem 2rem;
+        border-radius: 20px;
+        transition: background-color .2s linear, color .2s linear ;
+        &:hover {
+            background-color: @black;
+            color: @white;
+        }
     }
 }
 
 .nav {
     display: flex;
     height: 100%;
+    align-items: center;
 }
