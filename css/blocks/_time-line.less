@@ -1,0 +1,75 @@
+// main: ../style.less
+.timeline {
+    margin: 4.2rem auto;
+    max-width: 768px;
+    display: flex;
+}
+
+.timeline__col {
+    
+    width: 50%;
+    
+    &--left {
+        text-align: right;
+        padding-right: 3.2rem;
+        border-right: 1px @black solid;
+    }
+
+    &--right { 
+        padding-left: 3.2rem;
+    }
+}
+
+.timeline__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: @black;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2.6rem;
+}
+
+.timeline__item {
+    margin-bottom: 2.6rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.timeline__date{
+    font-size: .94rem;
+    text-decoration: underline;
+    color: black;
+    margin-bottom: .8rem;
+}
+
+.timeline__subtitle{
+    font-weight: 700;
+    font-size: 1.06rem;
+    margin-bottom: .2rem;
+}
+
+.timeline__position {
+    font-style: italic;
+    font-size: .94rem;
+    margin-bottom: .5rem;
+    color: @black;
+    font-weight: 400;
+}
+
+.timeline__text{
+    font-size: .8rem;
+    color: @gray;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+.timeline-awards {
+    display: flex;
+}
+
+.timeline-awards__right {
+    margin-left: 1.4rem;
+}
