@@ -1,6 +1,7 @@
 // compress: false
 
 
+
 @import "vars";
 
 html {
@@ -16,6 +17,9 @@ body {
     margin: 0;
     font-size: 1rem;
     color: @black;
+    &.no-scroll{
+        overflow: hidden;
+    }
 }
 *,
 *:before,
@@ -39,3 +43,5 @@ body {
 @import "blocks/_news";
 @import "blocks/_articles";
 @import "blocks/_footer";
+@import "blocks/_modal";
+@import "blocks/_modal-work";

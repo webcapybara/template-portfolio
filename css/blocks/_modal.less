@@ -1,0 +1,39 @@
+// main: ../style.less
+
+.modal {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding:  0 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: auto;
+    background-color: fade(@black, 90%);
+}
+
+.modal__dialog {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+}
+
+.modal__close {
+    position: absolute;
+    top: .7rem;
+    right: 1rem;
+    z-index: 1;
+    width: 34px;
+    height: 39px;
+    padding: 0;
+    background: 0;
+    border: 0;
+    transition: transform .2s linear;
+        
+    &:hover {
+        transform: translateY(-3px);
+    }
+}
