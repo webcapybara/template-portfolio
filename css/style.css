@@ -467,7 +467,7 @@ body.no-scroll {
   align-items: center;
 }
 .modal {
-  display: flex;
+  display: none;
   height: 100%;
   width: 100%;
   padding: 0 1rem;
@@ -478,12 +478,17 @@ body.no-scroll {
   overflow: auto;
   background-color: rgba(43, 42, 44, 0.9);
 }
+.modal.show {
+  display: flex;
+}
 .modal__dialog {
   width: 100%;
   max-width: 1200px;
   margin: auto;
   background-color: #fff;
   position: relative;
+  transform: rotateX(90deg);
+  transition: transform 0.2s linear;
 }
 .modal__dialog--sm {
   max-width: 900px;
@@ -761,4 +766,7 @@ body.no-scroll {
 }
 .mb {
   margin-bottom: 0;
+}
+.hide {
+  display: none;
 }
